@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Install Drupal console launcher.
+curl https://drupalconsole.com/installer -L -o drupal.phar &&
+chmod +x drupal.phar;
+sudo mv drupal.phar /usr/local/bin/drupal;
+drupal --version;
