@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Download PHPStorm.
+# Check if version fits. If not: https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
+wget --no-check-certificate https://download.jetbrains.com/webide/PhpStorm-2017.3.tar.gz &&
+
+#Untar PHPStorm.
+tar xfz PhpStorm-*.tar.gz;
+rm PhpStorm-*.tar.gz;
+
+#Move PHPStorm.
+mv ./PhpStorm-* ./PhpStorm &&
+sudo mv ./PhpStorm /opt/
+cd /opt/PhpStorm &&
+./bin/phpstorm.sh;
