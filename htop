@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Install HTOP
+sudo apt-get install htop;
+
+htop -v;
