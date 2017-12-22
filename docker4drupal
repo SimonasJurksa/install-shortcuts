@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Set docker4drupal package alias to download the file for project
+sudo printf "#!/bin/bash\n wget https://github.com/wodby/docker4drupal/blob/master/docker-compose.yml" >> /tmp/docker4drupal &&
+sudo mv /tmp/docker4drupal /usr/local/bin/ &&
+sudo chmod +x /usr/local/bin/docker4drupal;
