@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Download Slack Desktop
+wget --no-check-certificate "https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.2-amd64.deb" -P /tmp/;
+
+#Install Slack Desktop
+sudo dpkg -i /tmp/slack-desktop-*.deb;
+
+#Cleanup
+rm /tmp/slack-desktop-*.deb;
