@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#Download Vagrant
+wget --no-check-certificate "https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.deb" -P /tmp/;
+
+#Install Vagrant
+sudo dpkg -i /tmp/vagrant_*.deb;
+
+#Cleanup Vagrant
+rm /tmp/vagrant_*.deb;
+
+#Check Vagrant version
+vagrant --version;
