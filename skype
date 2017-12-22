@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Download Skype
+wget --no-check-certificate "https://go.skype.com/skypeforlinux-64.deb" -P /tmp/;
+
+#Install Skype
+sudo dpkg -i /tmp/skypeforlinux-*.deb;
+
+#Cleanup
+rm /tmp/skypeforlinux-*.deb;
