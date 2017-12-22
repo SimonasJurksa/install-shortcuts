@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#Download Opera
+wget --no-check-certificate "http://download1.operacdn.com/pub/opera/desktop/49.0.2725.64/linux/opera-stable_49.0.2725.64_amd64.deb" -P /tmp/;
+
+#Install Opera
+sudo dpkg -i /tmp/opera-stable_*.deb;
+
+#Cleanup Opera
+rm /tmp/opera-stable_*.deb;
