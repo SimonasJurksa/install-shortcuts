@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Download IntelliJ IDEA.
+# Check if version fits. If not: https://www.jetbrains.com/idea/download/previous.html
+wget --no-check-certificate "https://download.jetbrains.com/idea/ideaIU-2017.3.1.tar.gz" -P /tmp/ &&
+
+#Untar IntelliJ.
+tar xfz /tmp/ideaIU-*.tar.gz -C /tmp;
+rm /tmp/ideaIU*.tar.gz;
+
+#Move IntelliJ.
+mv /tmp/idea-IU-* /tmp/idea-IU &&
+sudo mv /tmp/idea-IU /opt/ &&
+cd /opt/idea-IU &&
+./bin/idea.sh;
