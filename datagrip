@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Download DataGrip.
+# Check if version fits. If not: https://confluence.jetbrains.com/display/DBE/DataGrip+previous+releases
+wget --no-check-certificate "https://download.jetbrains.com/datagrip/datagrip-2017.3.3.tar.gz" -P /tmp/ &&
+
+#Untar DataGrip.
+tar xfz /tmp/datagrip-*.tar.gz -C /tmp;
+rm /tmp/datagrip*.tar.gz;
+
+#Move DataGrip.
+mv /tmp/DataGrip-* /tmp/DataGrip &&
+sudo mv /tmp/DataGrip /opt/ &&
+cd /opt/DataGrip &&
+./bin/datagrip.sh;
