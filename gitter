@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#Install Gitter
+wget --no-check-certificate "https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb" -P /tmp/ &&
+sudo dpkg -i /tmp/gitter_*.deb &&
+rm /tmp/gitter_*.deb;
