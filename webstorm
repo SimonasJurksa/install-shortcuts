@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Download WebStorm.
+# Check if version fits. If not: https://www.jetbrains.com/webstorm/download/previous.html
+wget --no-check-certificate "https://download.jetbrains.com/webstorm/WebStorm-2017.3.1.tar.gz" -P /tmp/ &&
+
+#Untar WebStorm.
+tar xfz /tmp/WebStorm-*.tar.gz -C /tmp;
+rm /tmp/WebStorm*.tar.gz;
+
+#Move WebStorm.
+mv /tmp/WebStorm-* /tmp/WebStorm &&
+sudo mv /tmp/WebStorm /opt/ &&
+cd /opt/WebStorm &&
+./bin/webstorm.sh;
