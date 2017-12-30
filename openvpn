@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Install OpenVPN.
+sudo apt-get update &&
+sudo apt-get install network-manager-openvpn-gnome &&
+sudo service network-manager restart;
