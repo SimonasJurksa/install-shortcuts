@@ -7,3 +7,4 @@ chmod +x /tmp/phpbrew &&
 #Install PHPBrew.
 sudo mv /tmp/phpbrew /usr/local/bin/phpbrew;
 phpbrew -v;
+phpbrew init;
